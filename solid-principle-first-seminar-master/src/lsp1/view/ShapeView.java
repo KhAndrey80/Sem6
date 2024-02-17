@@ -1,16 +1,18 @@
 package lsp1.view;
 
 import lsp1.shape.Rectangle;
+import lsp1.shape.Shape;
+import lsp1.shape.Square;
 
 public class ShapeView {
-    private final Rectangle rectangle;
+    private Shape shape;
 
-    public ShapeView(Rectangle rectangle) {
-        this.rectangle = rectangle;
+    public ShapeView(Square square) {
+        this.shape = square;
     }
 
     public void showArea() {
-        System.out.print("Area of rectangle equal:");
-        System.out.println(rectangle.getArea());
+        System.out.print("Area of shape equal: ");
+        System.out.println(shape.getArea());
     }
 }
