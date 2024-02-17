@@ -1,13 +1,21 @@
 package homework;
 
-public class Persister{
-    private final User user;
+public class Persister implements Persistable{
 
-    public Persister(User user){
-        this.user = user;
-    }
-
-    public void save(){
+    @Override
+    public void save(User user) {
         System.out.println("Save user: " + user.getName());
     }
+    
+    
+    
+    // private final User user;
+
+    // public Persister(User user){
+    //     this.user = user;
+    // }
+
+    // public void save(){
+    //     System.out.println("Save user: " + user.getName());
+    // }
 }
